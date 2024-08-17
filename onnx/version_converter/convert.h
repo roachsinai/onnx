@@ -510,6 +510,7 @@ class DefaultVersionConverter : public BaseVersionConverter {
     registerAdapter("GRU", 14, 13, RemoveAttribute(klayout, 0));
     registerAdapter("LSTM", 14, 13, RemoveAttribute(klayout, 0));
     registerAdapter("RNN", 14, 13, RemoveAttribute(klayout, 0));
+    registerAdapter("Mul", 14, 13, RemoveAttribute(klayout, 0));
 
     /******** 14 -> 15 ********/
     registerAdapter(std::make_unique<CompatibleAdapter>("BatchNormalization", OpSetID(14), OpSetID(15)));
